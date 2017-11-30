@@ -99,7 +99,7 @@ bool CAirKiss::SetRouteInfo(std::string ssid, std::string password)
 	MagicCode(ssid, password);
 
     for (int i = 0; i < 8; ++i) {
-        int index = 0;
+        unsigned int index = 0;
         std::string data = password + random + ssid;
         
         PrefixCode(password);
